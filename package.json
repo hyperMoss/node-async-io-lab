@@ -1,0 +1,16 @@
+{
+  "name": "node-async-io-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "tcp:server": "node experiments/01-tcp-concurrency/server.mjs",
+    "tcp:client": "node experiments/01-tcp-concurrency/client.mjs",
+    "pool": "node experiments/02-threadpool-contention/benchmark.mjs",
+    "cpu": "node experiments/03-cpu-blocking/comparison.mjs",
+    "monitor": "node experiments/04-event-loop-monitoring/monitor.mjs",
+    "monitor:block": "node experiments/04-event-loop-monitoring/blocking-demo.mjs"
+  }
+}
